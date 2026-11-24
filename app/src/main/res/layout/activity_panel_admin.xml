@@ -2,43 +2,73 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/caballero_page"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="18dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/panel_barbero_admin"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="10dp" />
+        android:letterSpacing="0.16"
+        android:text="HERRAMIENTAS DEL EQUIPO"
+        android:textColor="@color/caballero_gold"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="serif"
+        android:text="Panel del barbero"
+        android:textColor="@color/caballero_text"
+        android:textSize="26sp" />
 
     <LinearLayout
         android:id="@+id/layoutLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="@drawable/bg_card_caballero"
+        android:orientation="vertical"
+        android:padding="18dp">
 
         <EditText
             android:id="@+id/etLoginEmail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/correo_de_barbero_o_admin"
-            android:inputType="textEmailAddress" />
+            android:layout_height="46dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_input_caballero"
+            android:hint="Correo de barbero o admin"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/caballero_text"
+            android:textColorHint="@color/caballero_muted"
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/etLoginPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/contrase_a"
-            android:inputType="textPassword" />
+            android:layout_height="46dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_input_caballero"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/caballero_text"
+            android:textColorHint="@color/caballero_muted"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnIniciarSesion"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/iniciar_sesi_n"
-            android:layout_marginTop="8dp" />
+            android:layout_height="48dp"
+            android:background="@drawable/bg_button_gold"
+            android:text="Iniciar sesión"
+            android:textAllCaps="false"
+            android:textColor="@color/caballero_dark_ink"
+            android:textSize="14sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -53,29 +83,40 @@
             android:id="@+id/tvUsuarioLogueado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/sesi_n_activa"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="10dp"
+            android:text="Sesión activa"
+            android:textColor="@color/caballero_muted"
+            android:textSize="12sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btnRecargarCitas"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_weight="1"
-                android:text="@string/actualizar_citas" />
+                android:background="@drawable/bg_button_gold"
+                android:text="Actualizar citas"
+                android:textAllCaps="false"
+                android:textColor="@color/caballero_dark_ink"
+                android:textSize="13sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnCerrarSesion"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/salir"
-                android:layout_marginStart="8dp" />
+                android:layout_height="42dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_input_caballero"
+                android:paddingHorizontal="14dp"
+                android:text="Salir"
+                android:textAllCaps="false"
+                android:textColor="@color/caballero_muted"
+                android:textSize="13sp" />
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
@@ -89,7 +130,9 @@
         android:id="@+id/tvEstadoPanel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text=""
-        android:layout_marginTop="8dp" />
+        android:textColor="@color/caballero_gold"
+        android:textSize="12sp" />
 
 </LinearLayout>

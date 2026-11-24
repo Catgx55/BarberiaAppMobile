@@ -1,8 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
     <style name="Base.Theme.BarberiaElCaballero" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/caballero_gold</item>
+        <item name="colorOnPrimary">@color/caballero_dark_ink</item>
+        <item name="colorSecondary">@color/caballero_gold_strong</item>
+        <item name="android:windowBackground">@color/caballero_page</item>
+        <item name="android:statusBarColor">@color/caballero_page</item>
+        <item name="android:navigationBarColor">@color/caballero_page</item>
+        <item name="android:textColorPrimary">@color/caballero_text</item>
+        <item name="android:textColorSecondary">@color/caballero_muted</item>
     </style>
 
     <style name="Theme.BarberiaElCaballero" parent="Base.Theme.BarberiaElCaballero" />

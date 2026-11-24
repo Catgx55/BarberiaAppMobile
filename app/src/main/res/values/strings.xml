@@ -29,4 +29,6 @@
     <string name="sesi_n_activa">Sesión activa</string>
     <string name="actualizar_citas">Actualizar citas</string>
     <string name="salir">Salir</string>
+    <string name="fade_cl_sico">Fade clásico</string>
+    <string name="descripci_n_del_servicio">Descripción del servicio</string>
 </resources>

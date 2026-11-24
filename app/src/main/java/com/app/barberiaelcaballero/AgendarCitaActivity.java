@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.app.barberiaelcaballero.model.AppointmentResponse;
 import com.app.barberiaelcaballero.model.BarberItem;
@@ -58,7 +57,7 @@ public class AgendarCitaActivity extends AppCompatActivity {
         apiService = ApiClient.getClient().create(BarberiaApiService.class);
 
         String[] metodosPago = {"EFECTIVO", "NEQUI", "DAVIPLATA"};
-        spPago.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, metodosPago));
+        spPago.setAdapter(new ArrayAdapter<>(this, R.layout.item_spinner_caballero, metodosPago));
 
         etFecha.setOnClickListener(v -> mostrarSelectorFecha());
         etHora.setOnClickListener(v -> mostrarSelectorHora());
@@ -115,14 +114,14 @@ public class AgendarCitaActivity extends AppCompatActivity {
                         }
                     }
                     spBarbero.setAdapter(new ArrayAdapter<>(AgendarCitaActivity.this,
-                            android.R.layout.simple_spinner_dropdown_item, nombres));
+                            R.layout.item_spinner_caballero, nombres));
                 }
             }
 
             @Override
             public void onFailure(Call<List<BarberItem>> call, Throwable t) {
                 spBarbero.setAdapter(new ArrayAdapter<>(AgendarCitaActivity.this,
-                        android.R.layout.simple_spinner_dropdown_item,
+                        R.layout.item_spinner_caballero,
                         Collections.singletonList("Error al cargar barberos")));
             }
         });
@@ -141,14 +140,14 @@ public class AgendarCitaActivity extends AppCompatActivity {
                         }
                     }
                     spServicio.setAdapter(new ArrayAdapter<>(AgendarCitaActivity.this,
-                            android.R.layout.simple_spinner_dropdown_item, nombres));
+                            R.layout.item_spinner_caballero, nombres));
                 }
             }
 
             @Override
             public void onFailure(Call<List<ServiceItem>> call, Throwable t) {
                 spServicio.setAdapter(new ArrayAdapter<>(AgendarCitaActivity.this,
-                        android.R.layout.simple_spinner_dropdown_item,
+                        R.layout.item_spinner_caballero,
                         Collections.singletonList("Error al cargar servicios")));
             }
         });

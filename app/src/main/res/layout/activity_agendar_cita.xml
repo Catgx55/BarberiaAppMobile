@@ -2,124 +2,195 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:background="@color/caballero_page"
+    android:padding="18dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="@drawable/bg_card_caballero"
+        android:orientation="vertical"
+        android:padding="18dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Agendar Cita"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="12dp" />
+            android:letterSpacing="0.16"
+            android:text="RESERVA EN UN MOMENTO"
+            android:textColor="@color/caballero_gold"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="14dp"
+            android:fontFamily="serif"
+            android:text="Agenda tu cita"
+            android:textColor="@color/caballero_text"
+            android:textSize="26sp" />
 
         <EditText
             android:id="@+id/etFirstName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/nombre_ej_juan"
-            android:inputType="textPersonName" />
+            android:layout_height="46dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_input_caballero"
+            android:hint="Nombre (ej. Juan)"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/caballero_text"
+            android:textColorHint="@color/caballero_muted"
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/etLastName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/apellido_ej_p_rez"
-            android:inputType="textPersonName" />
+            android:layout_height="46dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_input_caballero"
+            android:hint="Apellido (ej. Pérez)"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/caballero_text"
+            android:textColorHint="@color/caballero_muted"
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/correo_ej_juan_correo_com"
-            android:inputType="textEmailAddress" />
+            android:layout_height="46dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_input_caballero"
+            android:hint="Correo (ej. juan@correo.com)"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/caballero_text"
+            android:textColorHint="@color/caballero_muted"
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/etPhone"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/tel_fono_ej_3001234567"
-            android:inputType="phone" />
+            android:layout_height="46dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_input_caballero"
+            android:hint="Teléfono (ej. 3001234567)"
+            android:inputType="phone"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/caballero_text"
+            android:textColorHint="@color/caballero_muted"
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/selecciona_barbero"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp" />
+            android:layout_marginBottom="4dp"
+            android:text="Tu barbero"
+            android:textColor="@color/caballero_text"
+            android:textSize="12sp" />
 
         <Spinner
             android:id="@+id/spBarbero"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="46dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_input_caballero" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/selecciona_servicio"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp" />
+            android:layout_marginBottom="4dp"
+            android:text="Elige tu servicio"
+            android:textColor="@color/caballero_text"
+            android:textSize="12sp" />
 
         <Spinner
             android:id="@+id/spServicio"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="46dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_input_caballero" />
 
         <EditText
             android:id="@+id/etFecha"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/toca_para_elegir_fecha_yyyy_mm_dd"
-            android:focusable="false"
+            android:layout_height="46dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_input_caballero"
             android:clickable="true"
+            android:focusable="false"
+            android:hint="Toca para elegir fecha (YYYY-MM-DD)"
             android:inputType="none"
-            android:layout_marginTop="8dp" />
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/caballero_text"
+            android:textColorHint="@color/caballero_muted"
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/etHora"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/toca_para_elegir_hora_hh_mm"
-            android:focusable="false"
+            android:layout_height="46dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_input_caballero"
             android:clickable="true"
-            android:inputType="none" />
+            android:focusable="false"
+            android:hint="Toca para elegir hora (HH:mm)"
+            android:inputType="none"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/caballero_text"
+            android:textColorHint="@color/caballero_muted"
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/m_todo_de_pago"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp" />
+            android:layout_marginBottom="4dp"
+            android:text="¿Cómo prefieres pagar?"
+            android:textColor="@color/caballero_text"
+            android:textSize="12sp" />
 
         <Spinner
             android:id="@+id/spPago"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="46dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_input_caballero" />
 
         <EditText
             android:id="@+id/etNotas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/notas_adicionales_opcional"
-            android:inputType="textMultiLine" />
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_input_caballero"
+            android:hint="Notas adicionales (opcional)"
+            android:inputType="textMultiLine"
+            android:minHeight="46dp"
+            android:padding="12dp"
+            android:textColor="@color/caballero_text"
+            android:textColorHint="@color/caballero_muted"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnConfirmarCita"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/confirmar_cita"
-            android:layout_marginTop="14dp" />
+            android:layout_height="48dp"
+            android:background="@drawable/bg_button_gold"
+            android:text="Confirmar mi cita ↗"
+            android:textAllCaps="false"
+            android:textColor="@color/caballero_dark_ink"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvEstadoCita"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:text=""
-            android:layout_marginTop="12dp" />
+            android:textColor="@color/caballero_gold"
+            android:textSize="12sp" />
 
     </LinearLayout>
 </ScrollView>

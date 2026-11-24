@@ -2,39 +2,50 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_card_caballero"
     android:orientation="vertical"
-    android:padding="12dp"
-    android:layout_marginBottom="10dp">
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/tvCitaCliente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/cliente_1"
-        android:textSize="17sp"
-        android:textStyle="bold" />
+        android:fontFamily="serif"
+        android:text="#1 • Cliente"
+        android:textColor="@color/caballero_text"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/tvCitaDetalle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/fecha_hora_barbero_pago"
-        android:textSize="14sp"
-        android:layout_marginTop="4dp" />
+        android:layout_marginTop="4dp"
+        android:text="Fecha • Hora • Barbero"
+        android:textColor="@color/caballero_muted"
+        android:textSize="13sp" />
 
     <TextView
         android:id="@+id/tvCitaEstado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/estado_actual_pendiente"
-        android:textStyle="bold"
-        android:layout_marginTop="4dp" />
+        android:layout_marginTop="8dp"
+        android:text="Estado: PENDIENTE"
+        android:textColor="@color/caballero_gold"
+        android:textSize="13sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnCambiarEstado"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cambiar_estado"
-        android:layout_marginTop="6dp" />
+        android:layout_height="38dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_button_gold"
+        android:paddingHorizontal="14dp"
+        android:text="Cambiar estado"
+        android:textAllCaps="false"
+        android:textColor="@color/caballero_dark_ink"
+        android:textSize="12sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

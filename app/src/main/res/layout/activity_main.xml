@@ -2,58 +2,151 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/caballero_page"
     android:orientation="vertical"
-    android:padding="20dp" >
+    android:padding="18dp">
+
+    <!-- Encabezado de marca igual a la web -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp">
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_brand_mark"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="C."
+            android:textColor="@color/caballero_gold"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.16"
+                android:text="EL CABALLERO"
+                android:textColor="@color/caballero_text"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:letterSpacing="0.14"
+                android:text="BARBERÍA · ARMENIA"
+                android:textColor="@color/caballero_muted"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPanelAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_input_caballero"
+            android:paddingHorizontal="12dp"
+            android:text="Panel Barbero"
+            android:textAllCaps="false"
+            android:textColor="@color/caballero_muted"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/caballero_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.16"
+        android:text="DESDE 2024 · ARMENIA, QUINDÍO"
+        android:textColor="@color/caballero_gold"
+        android:textSize="10sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvTitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/barber_a_el_caballero"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="12dp" />
-
-    <Button
-        android:id="@+id/btnCargarServicios"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/cargar_servicios"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="serif"
+        android:text="El arte de un buen corte."
+        android:textColor="@color/caballero_text"
+        android:textSize="28sp" />
 
-    <Button
-        android:id="@+id/btnCargarBarberos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/cargar_barberos"
-        android:layout_marginBottom="12dp" />
-
+    <!-- Botón principal dorado -->
     <Button
         android:id="@+id/btnIrAgendar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/agendar_cita"
-        android:layout_marginBottom="12dp" />
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_button_gold"
+        android:text="Reservar mi cita ↗"
+        android:textAllCaps="false"
+        android:textColor="@color/caballero_dark_ink"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnPanelAdmin"
+    <!-- Fila de botones catálogo -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Panel Barbero / Admin"
-        android:layout_marginBottom="12dp" />
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tvResultado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/toca_cargar_servicios_para_consultar_el_backend"
-            android:textSize="16sp"
-            android:layout_marginBottom="12dp" />
+        <Button
+            android:id="@+id/btnCargarServicios"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input_caballero"
+            android:text="Servicios"
+            android:textAllCaps="false"
+            android:textColor="@color/caballero_gold"
+            android:textSize="13sp" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvServicios"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+        <Button
+            android:id="@+id/btnCargarBarberos"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input_caballero"
+            android:text="Barberos"
+            android:textAllCaps="false"
+            android:textColor="@color/caballero_gold"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Toca Servicios o Barberos para explorar el catálogo"
+        android:textColor="@color/caballero_muted"
+        android:textSize="12sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvServicios"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
 </LinearLayout>

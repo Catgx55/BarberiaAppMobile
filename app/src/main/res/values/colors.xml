@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="caballero_page">#11110F</color>
+    <color name="caballero_surface">#191917</color>
+    <color name="caballero_card">#1C1C19</color>
+    <color name="caballero_gold">#C9A56A</color>
+    <color name="caballero_gold_strong">#D9B779</color>
+    <color name="caballero_text">#EDEBE5</color>
+    <color name="caballero_muted">#99968E</color>
+    <color name="caballero_line">#2B2B28</color>
+    <color name="caballero_dark_ink">#171610</color>
+    <color name="caballero_success">#56B989</color>
+    <color name="caballero_error">#662D21</color>
 </resources>
