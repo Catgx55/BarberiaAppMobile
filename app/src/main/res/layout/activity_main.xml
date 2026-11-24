@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/barber_a_el_caballero"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnCargarServicios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cargar_servicios"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnCargarBarberos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cargar_barberos"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnIrAgendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/agendar_cita"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnPanelAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Panel Barbero / Admin"
+        android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/toca_cargar_servicios_para_consultar_el_backend"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvServicios"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+</LinearLayout>

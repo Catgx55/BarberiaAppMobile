@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">BarberiaElCaballero</string>
+    <string name="barber_a_el_caballero">Barbería El Caballero</string>
+    <string name="cargar_servicios">Cargar servicios</string>
+    <string name="toca_cargar_servicios_para_consultar_el_backend">Toca \'Cargar servicios\' para consultar el backend.</string>
+    <string name="nombre_del_servicio">Nombre del servicio</string>
+    <string name="_0_30_min">$0 - 30 min</string>
+    <string name="cargar_barberos">Cargar barberos</string>
+    <string name="agendar_cita">Agendar cita</string>
+    <string name="toca_para_elegir_fecha_yyyy_mm_dd">Toca para elegir fecha (YYYY-MM-DD)</string>
+    <string name="toca_para_elegir_hora_hh_mm">Toca para elegir hora (HH:mm)</string>
+    <string name="m_todo_de_pago">Método de Pago:</string>
+    <string name="notas_adicionales_opcional">Notas adicionales (opcional)</string>
+    <string name="confirmar_cita">Confirmar Cita</string>
+    <string name="selecciona_servicio">Selecciona Servicio:</string>
+    <string name="selecciona_barbero">Selecciona Barbero:</string>
+    <string name="tel_fono_ej_3001234567">Teléfono (ej. 3001234567)</string>
+    <string name="correo_ej_juan_correo_com">Correo (ej. juan@correo.com)</string>
+    <string name="apellido_ej_p_rez">Apellido (ej. Pérez)</string>
+    <string name="nombre_ej_juan">Nombre (ej. Juan)</string>
+    <string name="cliente_1">Cliente • #1</string>
+    <string name="fecha_hora_barbero_pago">Fecha • Hora • Barbero • Pago</string>
+    <string name="estado_actual_pendiente">Estado actual: PENDIENTE</string>
+    <string name="cambiar_estado">Cambiar estado</string>
+    <string name="panel_barbero_admin">Panel Barbero / Admin</string>
+    <string name="correo_de_barbero_o_admin">Correo de barbero o admin</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="iniciar_sesi_n">Iniciar sesión</string>
+    <string name="sesi_n_activa">Sesión activa</string>
+    <string name="actualizar_citas">Actualizar citas</string>
+    <string name="salir">Salir</string>
+</resources>
