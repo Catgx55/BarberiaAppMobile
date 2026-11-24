@@ -35,7 +35,7 @@
         android:textSize="13sp"
         android:textStyle="bold" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCambiarEstado"
         android:layout_width="wrap_content"
         android:layout_height="38dp"

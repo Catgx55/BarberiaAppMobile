@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/caballero_page"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
     android:padding="18dp">
 
     <TextView
@@ -59,7 +60,7 @@
             android:textColorHint="@color/caballero_muted"
             android:textSize="14sp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnIniciarSesion"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -94,7 +95,7 @@
             android:layout_marginBottom="12dp"
             android:orientation="horizontal">
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnRecargarCitas"
                 android:layout_width="0dp"
                 android:layout_height="42dp"
@@ -106,7 +107,7 @@
                 android:textSize="13sp"
                 android:textStyle="bold" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnCerrarSesion"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"

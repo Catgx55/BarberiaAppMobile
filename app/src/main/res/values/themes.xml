@@ -8,6 +8,7 @@
         <item name="android:navigationBarColor">@color/caballero_page</item>
         <item name="android:textColorPrimary">@color/caballero_text</item>
         <item name="android:textColorSecondary">@color/caballero_muted</item>
+        <item name="android:fitsSystemWindows">true</item>
     </style>
 
     <style name="Theme.BarberiaElCaballero" parent="Base.Theme.BarberiaElCaballero" />

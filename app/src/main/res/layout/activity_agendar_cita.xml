@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/caballero_page"
+    android:fitsSystemWindows="true"
     android:padding="18dp">
 
     <LinearLayout
@@ -172,7 +173,7 @@
             android:textColorHint="@color/caballero_muted"
             android:textSize="14sp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnConfirmarCita"
             android:layout_width="match_parent"
             android:layout_height="48dp"
